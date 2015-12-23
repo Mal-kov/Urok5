@@ -17,23 +17,13 @@ $news= explode("\n", $x );
     function one_news($news){
         $n = $_GET['id'];
         tables();
-       // echo "<table border=1>
-       //         <tbody>
-       //         <tr align=center>
-       //         <td>№</td>
-       //         <td>Новость</td></tr>";
         echo"<tr align=center>
                 <td>",$n,"</td>
                 <td>",($news [$_GET['id']-1]),"</td></tr>";
     
     }
     function all_news($news){
-       // echo "<table border=1>
-       //         <tbody>
-       //         <tr align=center>
-       //         <td>№</td>
-       //         <td>Новость</td></tr>";
-    tables();
+        tables();
     foreach ($news as $keys => $param){
         echo"<tr align=center>
                 <td>",$keys+1,"</td>
